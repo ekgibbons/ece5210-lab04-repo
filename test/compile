@@ -1,0 +1,17 @@
+-*- mode: compilation; default-directory: "~/Dropbox/Documents/Work/weber/2023_spring/ece_5210/stm32/ece5210_lab04/test/" -*-
+Compilation started at Mon Feb 13 09:26:03
+
+make -k ; ./sandbox 
+gcc -c -o ece5210.o ../Core/Src/ece5210.c -Wall -Wconversion -O3 -I ../Core/Inc
+gcc -o test unittests.o ece5210.o -lm
+gcc -o sandbox sandbox.o ece5210.o -lm
+out: -0.181755
+out: -0.306181
+out: 2.044132
+out: 3.356817
+out: 4.669503
+out: 5.982188
+out: 7.294874
+out: 8.607559
+
+Compilation finished at Mon Feb 13 09:26:04
